@@ -14,13 +14,27 @@
 <body>
 
     <!-- responsivve navbar -->
-    <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+      <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+        <!-- Mobile menu button -->
+        <div class=" relative md:hidden">
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            <!-- Dropdown menu -->
+            <div id="mobile-menu" class="hidden absolute bg-white border p-3 shadow-md right-0 top-10">
+                <p id="x" style="text-align: right; cursor: pointer;">x</p>
+                <a href="index.html" class="hover:underline mb-1">Home</a>
+                <a href="product.html" class="hover:underline mb-1">Product</a>
+                <a href="contact.html" class="hover:underline block">Contact</a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
@@ -44,7 +58,9 @@
             <p class="mb-4">We offer you a wide range of Artificial and Natural FLowers</p>
             <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your Interior</h2>
             <div>
-                <button class="bg-black rounded text-white p-2">Shop Now</button>
+                <button
+                    class="bg-black rounded text-white p-2 hover:bg-transparent hover:border border-black hover:text-black">Shop
+                    Now</button>
                 <button class="border border-black p-2">Watch Video</button>
             </div>
 
@@ -176,10 +192,10 @@
     <section class="text-center">
         <h1 class="font-bold text-3xl">Join our News Letter</h1>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
-        <div class="flex justify-center"> 
+        <div class="flex justify-center">
             <input type="text" class="border border-black p-2 m-3 container">
         </div>
-        <button class="bg-black text-white p-2 m-1 underline">Subscribe</button>    
+        <button class="bg-black text-white p-2 m-1 underline">Subscribe</button>
     </section>
 
     <!--footer-->
@@ -189,7 +205,7 @@
         <p> @ 2025 Greenday.com</p>
 
 
-    </footer>   
+    </footer>
 
 
 </body>
