@@ -11,59 +11,44 @@
     />
   </head>
   <body>
-    <nav
-      class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
-    >
-      <h1 class="text-2xl">Greenden</h1>
 
-      <!-- Mobile menu button -->
-      <div class="relative md:hidden">
-        <svg
-          id="svg"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
+     <!-- responsivve navbar -->
+      <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
 
-        <!-- Dropdown menu -->
-        <div
-          id="mobile-menu"
-          class="hidden absolute bg-white border p-3 shadow-md right-0 top-10">
-          <a href="index.html" class="mb-1">Home</a>
-          <a href="product.html" class="mb-1">Product</a>
-          <a href="contact.html" class="block">Contact</a>
+        <!-- Mobile menu button -->
+        <div class=" relative md:hidden">
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            <!-- Dropdown menu -->
+            <div id="mobile-menu" class="hidden absolute bg-white border p-3 shadow-md right-0 top-10">
+                <p id="x" style="text-align: right; cursor: pointer;">x</p>
+                <a href="index.html" class="hover:underline mb-1">Home</a>
+                <a href="product.html" class="hover:underline mb-1">Product</a>
+                <a href="contact.html" class="hover:underline block">Contact</a>
+            </div>
         </div>
-      </div>
 
-      <script src="script.js"></script>
+        <script src="script.js"></script>
 
-      <ul class="flex gap-5 text-gray-600 hidden md:flex">
-        <li>
-          <a class="hover:underline hover:text-black" href="index.html">
-            Home</a
-          >
-        </li>
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html"> Home</a>
+            </li>
 
-        <li>
-          <a class="hover:underline hover:text-black" href="product.html">
-            Products</a
-          >
-        </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html"> Products</a>
+            </li>
 
-        <li>
-          <a class="hover:underline hover:text-black" href="contact.html">
-            Contact</a
-          >
-        </li>
-      </ul>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html"> Contact</a>
+            </li>
+
+        </ul>
     </nav>
 
     <!--header-->
